@@ -1,0 +1,223 @@
+/*************CSS RESETS*********************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    flex: 0 0 auto;
+    background: #000000;
+    opacity: .95;
+}
+
+#banner {
+    flex: 1 0 auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    color: #f5f5f5;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: small;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    transition: color 1s ease, background 1s ease, padding 1s ease;
+}
+
+nav ul li a:hover {
+    color: #c79864;
+    padding-left: 60px;
+}
+
+#nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 10px;
+}
+
+#nav-top h3 {
+    color: #c79864;
+    /* padding: 5px; */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+#menu-btn {
+    /* padding-right: 10px; */
+    /* border: 2px solid #f5f5f5; */
+    align-self: center;
+
+}
+
+#menu-btn .fa {
+    color: #f5f5f5;
+    font-size: larger;
+}
+
+@media screen and (min-width: 690px) {
+    nav {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding: 0 20px; */
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        /* flex: 1 1 auto; */
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+
+
+    nav ul li a {
+        border: none;
+    }
+
+    nav ul li a:hover {
+        padding-left: 20px !important;
+    }
+
+    nav ul li a:active {
+        color: #c79864;
+    }
+}
+
+/**************** banner section styles **********/
+#banner {
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,.7), rgba(0,0,0,.3)),url("../images/main_background.jpg");
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    padding-top: 30px;
+}
+
+#banner-texts h4 {
+    color: #c3e0c3;
+    font-size: smaller;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#banner-texts h3 {
+    color: #fff;
+    margin: 30px 0;
+    font-size:  xx-large;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+#banner-texts p {
+    color: #c3c0c0;
+    font-size: smaller;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding-left: 44px;
+    position: relative;
+}
+
+#banner-texts p::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background: linear-gradient(to right, #c79864,#cc7f39);
+}
+
+#banner-texts a {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 0;
+    min-width: 155px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: linear-gradient(to right, #c79864,#cc7f39);
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background 2s ease, border 0.5s ease, color 1s ease;
+}
+
+#banner-texts a:hover {
+    color: #cc7f39;
+    background: transparent;
+    border: 1px solid #cc7f39;
+}
+
+
+

@@ -1,48 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!----------google fonts-------->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
     <!----------main css------------>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>My Portfolio website</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-----------HEADER SECTION------------->
     <header>
-        <nav>
-            <div id="nav-top">
-                <h3>Isaac Obuya</h3>
-                <div id="menu-btn">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-            <!------nav links----->
-            <ul id="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <!----------BANNER SECTION----------->
-        <section id="banner">
-            <div id="banner-texts">
-                <h4>Hello, my name is</h4>
-                <h3>Isaac Obuya</h3>
-                <p>A creative full stack developer</p>
-                <a href="#" class="main-btn">Know more</a>
-            </div>
-        </section>
-        <!----------END OF BANNER SECTION---->
+      <nav>
+        <div id="nav-top">
+          <h3>Isaac Obuya</h3>
+          <div id="menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+        <!------nav links----->
+        <ul id="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!----------BANNER SECTION----------->
+      <section id="banner">
+        <div id="banner-center">
+          <div id="banner-texts">
+            <h4>Hello, my name is</h4>
+            <h3>Isaac Obuya</h3>
+            <p>A creative full stack developer</p>
+            <a href="#" class="main-btn">Know more</a>
+          </div>
+
+          <div class="image-banner">
+            <img src="./images/my_profile1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!----------END OF BANNER SECTION---->
     </header>
     <!-------END OF HEADER SECTION---------->
 
-    <script src="https://kit.fontawesome.com/5f4d236e68.js" crossorigin="anonymous"></script>
-</body>
+    <!-------ABOUT SECTION------------------>
+    <section id="about-info">
+      <div class="about-center">
+        <!-------about image here----->
+        <div class="about-img">
+          <img src="./images/my_profile1.png" alt="my photo" />
+        </div>
+        <!---------about texts------->
+        <div class="about-texts">
+          <!-----about title------>
+          <h3 class="section-title">about me</h3>
+          <h4 class="section-title-description">who am i</h4>
+          <article class="about-description">
+            <p>
+              My name is Isaac Obuya Juma. I am a Full Stack Developer with the
+              main focus on the MERN (MongoDB, Express, React and Node) stack. I
+              consider myself as a very creative person and dedicated to my
+              work. With 9+ months experience as a Full Stack developer, i
+              believe i have acquired the necessary skills and expertise to
+              build great and intuitive websites.
+            </p>
+            <p>
+              I also have interest in mobile application development and for a
+              couple of weeks now i have been learning and practising native
+              android application development using java.
+            </p>
+          </article>
+
+          <!---------skilled languages section------>
+          <div class="skilled-languages">
+            <!----------start skills section---------->
+            <div class="skills-center">
+              <article class="single-skill-language">
+                <h4 class="skill">Html5</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">CSS3</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">JavaScript</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">React</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">Node and Express</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">MongoDB</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">Java</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+
+              <article class="single-skill-language">
+                <h4 class="skill">Android</h4>
+                <div class="stars-icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="cv-download">
+            <a href="" class="main-btn">download cv</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------SERVICES SECTION-------------->
+    <section id="services">
+      <!-----about title------>
+      <h3 class="section-title">my services</h3>
+      <h4 class="section-title-description">what i can do</h4>
+      <div class="services-wrapper">
+        <div class="services-center">
+          <!----------single service item------>
+          <article class="single-service-item">
+            <span class="service-icon">
+              <i class="fas fa-laptop"></i>
+            </span>
+            <h3 class="service-title">User Interface</h3>
+            <p>
+              I can develop highly interactive and responsive user interfaces
+              according to industry best practice.
+            </p>
+          </article>
+
+          <!----------single service item------>
+          <article class="single-service-item">
+            <span class="service-icon">
+              <i class="fas fa-server"></i>
+            </span>
+            <h3 class="service-title">Backend</h3>
+            <p>
+              I can develop well tested and documented APIs using the latest
+              NodeJs features to enable you achieve your business goals.
+            </p>
+          </article>
+
+          <!----------single service item------>
+          <article class="single-service-item">
+            <span class="service-icon">
+              <i class="fas fa-mobile"></i>
+            </span>
+            <h3 class="service-title">Mobile App</h3>
+            <p>
+              I can develop a fast and highly interactive android application
+              that gives users the best experience ever.
+            </p>
+          </article>
+          <!----------single service item------>
+          <article class="single-service-item">
+            <span class="service-icon">
+              <i class="fas fa-headset"></i>
+            </span>
+            <h3 class="service-title">User Support</h3>
+            <p>
+              I can offer excellent support in case you are faced with a
+              challenge. I can also help maintain you web application or add new
+              features if need be.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!------------------RESUME SECTION------------->
+    <section id="resume">
+      <!-----about title------>
+      <h3 class="section-title">my resume</h3>
+      <h4 class="section-title-description">my awesome story</h4>
+      <div class="resume-center">
+        <!-------single item wrapper---->
+        <div class="education">
+          <!---------single resume item--------->
+          <article class="single-resume-item">
+            <h4>BSc. Information and Communication Technology</h4>
+            <label for="" class="resume-date">2015 - 2018</label>
+            <span>Jaramogi Oginga Odinga University</span>
+            <p>
+              Graduated with Bachelors degree in Information and Communication
+              Technology. Attained a classification score of 2<sup
+                >nd upper division.</sup
+              >
+            </p>
+            <div class="icon-box">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          </article>
+
+          <!---------single resume item--------->
+          <article class="single-resume-item">
+            <h4>Full Stack Javascript Development (MERN)</h4>
+            <label for="" class="resume-date">2019 -- present</label>
+            <span>LakeHub Academy Kisumu</span>
+            <p>
+              Enrolled in a coding boot camp at LakeHub Academy, Kisumu. I was
+              trained in Full Stack Javascript Development with main focus on
+              the MERN stack.
+            </p>
+            <div class="icon-box">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          </article>
+        </div>
+        <!---------end of education ------->
+        <!---------online courses---------->
+        <div class="online-training">
+          <!---------single resume item--------->
+          <article class="single-resume-item">
+            <h4>Associate Android Developer Scholarship</h4>
+            <label for="" class="resume-date">2020 -- present</label>
+            <span>Andela, Google and Pluralsight</span>
+            <p>
+              Was among the applicants selected for the Google Africa Developer
+              Scholarship (GADS) on Associates Android Developer track. This
+              program is offered by Andela in patnership with Google and
+              PLuralsight.
+            </p>
+            <div class="icon-box">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          </article>
+
+          <!---------single resume item--------->
+          <article class="single-resume-item">
+            <h4>DevCTraining with andela</h4>
+            <label for="" class="resume-date">2019, Sept - Nov.</label>
+            <span>Andela and Facebook</span>
+            <p>
+              Was among the 2500 applicants selected for training on MERN stack
+              by Andela in collaboration with Facebook and Open class rooms.
+              Helped sharpen my skills on the MERN stack.
+            </p>
+            <div class="icon-box">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!------------------PORTFOLIO SECTION--------->
+    <section id="portfolio">
+      <!-----about title------>
+      <h3 class="section-title">my portfolio</h3>
+      <h4 class="section-title-description">my recent works</h4>
+
+      <div class="project-center">
+      <!-----------filter buttons-------->
+      <div class="button-group filter-buttons">
+        <button data-filter="*">all</button>
+        <button data-filter=".frontend">front end</button>
+        <button data-filter=".backend">backend</button>
+        <button data-filter=".mobile">mobile</button>
+      </div>
+
+      <div class="portfolio-container">
+        <!----------single project-------->
+        <article class="project-card frontend">
+          <img src="./images/current-projects-1.jpeg" alt="project-1" />
+        </article>
+        <!----------single project-------->
+        <article class="project-card backend">
+          <img src="./images/current-projects-2.jpeg" alt="project-2" />
+        </article>
+        <!----------single project-------->
+        <article class="project-card frontend">
+          <img src="./images/current-projects-3.jpeg" alt="project-3" />
+        </article>
+        <!----------single project-------->
+        <article class="project-card backend">
+          <img src="./images/current-projects-4.jpeg" alt="project-4" />
+        </article>
+                <!----------single project-------->
+                <article class="project-card mobile">
+                  <img src="./images/projects-city-1.jpeg" alt="project-4" />
+                </article>
+      </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/5f4d236e68.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--jquery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-------images loaded---------->
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+       <!-------isotope---------------->
+       <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="./js/iso.js"></script>
+  </body>
 </html>

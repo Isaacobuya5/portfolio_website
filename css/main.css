@@ -113,7 +113,7 @@ nav ul li a:hover {
     font-size: larger;
 }
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 769px) {
     nav {
         display: flex;
         align-items: baseline;
@@ -149,7 +149,8 @@ nav ul li a:hover {
 
 /**************** banner section styles **********/
 #banner {
-    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,.7), rgba(0,0,0,.3)),url("../images/main_background.jpg");
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,.7), rgba(0,0,0,.3)),url("../images/main_background.jpg")
+    center/cover fixed no-repeat;
     display: flex;
     align-items: center;
     padding-left: 4rem;
@@ -219,5 +220,414 @@ nav ul li a:hover {
     border: 1px solid #cc7f39;
 }
 
+.image-banner {
+    display: none;
+}
+
+@media screen and (min-width: 990px) {
+    #banner-center {
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    #banner-texts {
+        flex: 0 0 calc(40% - 2em);
+    }
 
 
+    .image-banner {
+        display: inline-flex;
+        flex: 0 0 calc(50% - 2em);
+    }
+
+    .image-banner img {
+        display: inline-block;
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+/********************ABOUT SECTION STYLES*************************/
+#about-info {
+    background: #282929;
+    padding: 40px;
+}
+
+.about-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: smaller;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-left: 44px;
+    color: #fff;
+    position: relative;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background: linear-gradient(to right, #c79864,#cc7f39);
+}
+
+.section-title-description {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .7px;
+    margin: 0;
+}
+
+.about-description p {
+    margin: 10px 0;
+    color: #a2a2a2;
+    line-height: 1.8;
+    font-weight: 400;
+    display: block;
+}
+
+@media screen and (min-width: 690px) {
+    .about-center {
+        max-width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    .about-img {
+        flex: 0 0 calc(40% - 2em);
+    }
+
+    .about-texts {
+        flex: 0  calc(50% - 2em);
+    }
+
+}
+
+.skilled-languages {
+    background: rgba(255,255,255, .05);
+}
+
+.single-skill-language {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.skill {
+    color: #fff;
+    font-size: smaller;
+    line-height: 1;
+    letter-spacing: .3px;
+}
+
+.stars-icon {
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 690px) {
+    .skills-center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 690px) {
+    .skills-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+.cv-download {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cv-download .main-btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 0;
+    min-width: 155px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: linear-gradient(to right, #c79864,#cc7f39);
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background 2s ease, border 0.5s ease, color 1s ease;
+}
+
+/*************************SERVICES STYLES**********************/
+#services {
+    background: #282929;
+    padding: 40px;
+}
+
+.services-wrapper {
+    padding-top: 40px;
+}
+
+
+.single-service-item {
+    position: relative;
+    background: rgba(40, 41, 41, .7);
+    text-align: center;
+    padding: 25px 8px;
+    margin-bottom: 30px;
+}
+
+.service-icon {
+    display: block;
+    padding: 10px 0;
+}
+
+.service-title {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+.service-icon i {
+    color: #cc7f39;
+    font-size: 50px;
+}
+
+.single-service-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.single-service-item p {
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #a2a2a2;
+}
+
+@media screen and (min-width: 690px) {
+    .services-center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 790px) {
+    .services-center {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 990px) {
+    .services-center {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+/*******************************RESUME SECTION STYLES***************/
+#resume {
+    background: #282929;
+    padding: 40px;
+}
+
+.resume-center {
+    padding-top: 40px;
+}
+
+.education,
+.online-training {
+    padding-left: 52px;
+}
+
+.single-resume-item {
+    position: relative;
+    background: #2c2d2d;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-left: 2px solid #cc7f39;;
+}
+
+.single-resume-item::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: -18px;
+    width: 16px;
+    height: 2px;
+    background: linear-gradient(to right, #c79864,#cc7f39);;
+}
+
+.single-resume-item h4 {
+    display: block;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.resume-date {
+    display: inline-block;
+    font-size: 14px;
+    color: #cc7f39;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+}
+
+.single-resume-item span {
+    display: inline-block;
+    font-size: smaller;
+    line-height: 1;
+    letter-spacing: .3px;
+    color: #a2a2a2;
+    margin-left: 4px;
+    padding-left: 8px;
+    border-left: 1px solid #a2a2a2;
+}
+
+.single-resume-item p {
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #a2a2a2;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+}
+
+.icon-box {
+    position: absolute;
+    top: 10px;
+    left: -53px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #cc7f39;
+}
+
+@media screen and (min-width: 690px) {
+    .education,
+    .online-training {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5rem;
+    }
+}
+
+/*************************PORTFOLIO SECTION********************/
+#portfolio {
+    background: #2c2d2d;
+    padding: 40px;
+}
+
+.button-group {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 8px 15px;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.button-group button {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .3px;
+    cursor: pointer;
+    color: #fff;
+    background: transparent;
+    font-size: 13px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    transition: border 1s ease-out, background 1s ease-out,;
+}
+
+.button-group button:hover {
+    border: 1px solid inherit;
+    border-radius: 10px;
+    background: #cc7f39;
+}
+
+.project-center {
+    padding-top: 40px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio-container img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ffc914;
+}
+
+.project-card {
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .project-card {
+      width: calc(25% - 20px);
+    }
+  }
+  

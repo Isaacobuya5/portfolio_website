@@ -49,6 +49,7 @@ table {
 	border-spacing: 0;
 }
 
+
 header {
     display: flex;
     flex-direction: column;
@@ -612,6 +613,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+
 .portfolio-container img {
     display: block;
     width: 100%;
@@ -622,7 +624,7 @@ nav ul li a:hover {
 
 
 .project-card {
-    width: calc(50% - 20px);
+    width: 100%;
     margin: 10px;
 }
 

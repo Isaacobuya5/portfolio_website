@@ -1,5 +1,5 @@
 $(document).ready(() => {
     $("#menu-btn").click(() => {
-        $("#links").slideToggle(3000);
+        $("#links").slideToggle(700);
     });
 });

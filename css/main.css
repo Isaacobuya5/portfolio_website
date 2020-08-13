@@ -75,6 +75,7 @@ nav ul {
     list-style: none;
 }
 
+
 nav ul li a{
     display: block;
     color: #f5f5f5;
@@ -90,6 +91,10 @@ nav ul li a{
 nav ul li a:hover {
     color: #c79864;
     padding-left: 60px;
+}
+
+.hide {
+    display: none;
 }
 
 #nav-top {

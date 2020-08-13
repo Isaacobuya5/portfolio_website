@@ -500,7 +500,7 @@ nav ul li a:hover {
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    border-left: 2px solid #cc7f39;;
+    border-left: 2px solid #cc7f39;
 }
 
 .single-resume-item::before {
@@ -691,6 +691,8 @@ nav ul li a:hover {
     }
   }
 
+/******************BLOG SECTION STYLES*******************/
+
 #blog {
     background: #2c2d2d;
     padding: 40px; 
@@ -834,3 +836,204 @@ nav ul li a:hover {
     }
 }
   
+/************************CONTACT SECTION******************/
+#contact {
+    background: #2c2d2d;
+    padding: 40px;
+}
+
+.contact-center {
+    padding-top: 40px;
+}
+
+.contact-form-section {
+    display: block;
+    padding: 40px 15px;
+    background: #282929;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-form input {
+    margin-bottom: 30px;
+}
+
+.form-control {
+display: block;
+background: transparent;
+color: #fff;
+border: 1px solid rgba(255, 255, 255, .04);
+outline: none;
+box-shadow: none;
+border-radius: 0;
+height: 20px;
+padding: 12px;
+}
+
+#message {
+    height: 100px;
+    padding-top: 18px;
+    resize: none;
+}
+
+.form-control::placeholder {
+    text-transform: capitalize;
+    font-size: small;
+    letter-spacing: .5px;
+}
+
+.form-control:focus {
+    border: 1px solid #cc7f39;
+}
+
+.contact-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 0;
+    min-width: 155px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #c79864,#cc7f39);
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background 2s ease, border 0.5s ease, color 1s ease;
+}
+
+.contact-info-container {
+    padding-top: 30px;
+}
+
+.single-contact-info {
+    position: relative;
+    text-align: center;
+    padding: 23px 10px;
+    margin-bottom: 30px;
+    margin-left: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-left: 2px solid #cc7f39;
+}
+
+.single-contact-info:last-of-type {
+    margin-bottom: 0;
+}
+
+.single-contact-info::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: -18px;
+    width: 16px;
+    height: 2px;
+    background: linear-gradient(to right, #c79864,#cc7f39);
+}
+
+.contact-title {
+    display: inline-block;
+    color: #fff;
+    font-size: smaller;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 24px;
+    margin-bottom: 12px;
+}
+
+.contact-content {
+    font-size: small;
+}
+
+.contact-content p {
+    margin-bottom: 0;
+    line-height: 20px;
+    font-weight: 600;
+    color: #a2a2a2;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contact-content p:last-child {
+    margin-top: 3px;
+}
+
+@media screen and (min-width: 690px) {
+    .contact-center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }   
+
+}
+
+/**********************FOOTER STYLES**************/
+
+footer {
+    padding: 40px;
+    background: #282929;
+    color: #fff;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-icons li a {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-social-icons li a:hover {
+    background: #cc7f39;
+}
+
+.copyright-info {
+    text-align: center;
+}
+.copyright-info p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 0;
+    line-height: 1.8;
+}
+
+/*********************SCROLL TO TOP********************/
+.scroll-top-btn {
+    position: fixed;
+    font-size: medium;
+    /* bottom: -50px;
+    right: -70px; */
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 20;
+    background: #cc7f39;
+}

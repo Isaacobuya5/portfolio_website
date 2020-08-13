@@ -231,37 +231,41 @@ nav ul li a:hover {
     border: 1px solid #cc7f39;
 }
 
-.image-banner {
-    display: none;
+
+@media screen and (min-width: 768px) {
+ #banner {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #banner-texts {
+     text-align: center;
+ }
+
+ #banner-texts h4 {
+     font-size: 44px;
+     letter-spacing: 2px;
+ }
+
+ #banner-texts h3 {
+     font-size: 76px;
+     letter-spacing: 6px;
+ }
+
+ #banner-texts p {
+     font-size: 30px;
+ }
+
+ #banner-texts a {
+     padding: 25px 0;
+     min-width: 230px;
+ }
+
+ #banner-texts p::before {
+     top: 12px;
 }
-
-@media screen and (min-width: 990px) {
-    #banner-center {
-        display: flex;
-        width: 100vw;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-
-    #banner-texts {
-        flex: 0 0 calc(40% - 2em);
-    }
-
-
-    .image-banner {
-        display: inline-flex;
-        flex: 0 0 calc(50% - 2em);
-    }
-
-    .image-banner img {
-        display: inline-block;
-        width: 70%;
-        height: auto;
-    }
-
 }
-
 /********************ABOUT SECTION STYLES*************************/
 #about-info {
     background: #282929;
@@ -371,12 +375,6 @@ nav ul li a:hover {
 
 }
 
-@media screen and (min-width: 690px) {
-    .skills-center {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
 
 .cv-download {
     padding-top: 20px;
